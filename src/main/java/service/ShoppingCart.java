@@ -18,7 +18,6 @@ public class ShoppingCart {
         return sumProducts;
     }
 
-
     public double getShoppingCartAmountDiscount() {
         double sumProducts = 0;
         for (int i = 0; i < shoppingCartArray.length; i++) {
