@@ -1,7 +1,6 @@
 package service;
 
 import model.Food;
-import model.constants.Discount;
 
 public class ShoppingCart {
     private Food[] shoppingCartArray;
