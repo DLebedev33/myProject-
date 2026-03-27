@@ -1,31 +1,25 @@
 package model;
 
-import static model.constants.Discount.redApple;
 
 public abstract class Food implements Discountable {
     protected int amount;
-    protected static double price;
+    protected double price;
     protected boolean isVegetarian;
 
-    protected Food(int amount, double price, boolean isVegetarian) {
+    protected Food(int amount, double price) {
         this.amount = amount;
         this.price = price;
-        this.isVegetarian = isVegetarian;
     }
 
-    public Integer getAmount() {
+    public int getAmount() {
         return amount;
     }
 
-    public static Double getPrice() {
+    public double getPrice() {
         return price;
     }
 
     public boolean isVegetarian() {
         return isVegetarian;
-    }
-
-    public double getDiscount() {
-        return redApple;
     }
 }
